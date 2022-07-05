@@ -4,6 +4,105 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-style: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.landing {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+}
+
+.landing__name {
+  font-size: 2rem;
+  color: #666666;
+  font-weight: 400;
+  margin-bottom: -15px;
+}
+
+.landing__position {
+  font-size: 3rem;
+  font-weight: 300;
+  background: -webkit-gradient(linear, left top, right top, from(#50baf5), color-stop(89.58%, #28f7de));
+  background: linear-gradient(90deg, #50baf5 0%, #28f7de 89.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.landing__scroll {
+  width: 20px;
+  height: 50px;
+  border: 1px solid #b4b4b4;
+  border-radius: 100px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.landing__scroll__ball {
+  width: 10px;
+  height: 10px;
+  background-color: #b4b4b4;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: ballMovement 5s ease-in-out infinite;
+          animation: ballMovement 5s ease-in-out infinite;
+}
+
+@-webkit-keyframes ballMovement {
+  0% {
+    top: 5px;
+  }
+  10% {
+    top: calc(100% - 15px);
+  }
+  50% {
+    top: calc(100% - 15px);
+  }
+  60% {
+    top: 5px;
+  }
+  100% {
+    top: 5px;
+  }
+}
+
+@keyframes ballMovement {
+  0% {
+    top: 5px;
+  }
+  10% {
+    top: calc(100% - 15px);
+  }
+  50% {
+    top: calc(100% - 15px);
+  }
+  60% {
+    top: 5px;
+  }
+  100% {
+    top: 5px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
