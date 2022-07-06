@@ -112,7 +112,6 @@ html {
 }
 
 .projects {
-  height: 200vh;
   background-color: #50baf5;
   position: relative;
 }
@@ -126,6 +125,18 @@ html {
 }
 
 .projects__container {
+  margin: 0 auto;
+  width: 840px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+  -ms-grid-columns: 400px 400px;
+      grid-template: auto auto / 400px 400px;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.projects__container__project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,78 +144,64 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.projects__container__project {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 60%;
-  height: 250px;
-  margin-bottom: 30px;
-}
-
-.projects__container__project__image-container {
+.projects__container__project__image {
   width: 400px;
-  height: 250px;
-  overflow: hidden;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 
-.projects__container__project__image-container img {
-  height: 250px;
-}
-
-.projects__container__project__container {
-  width: 300px;
-}
-
-.projects__container__project__container__header {
-  font-size: 1.5rem;
+.projects__container__project__name {
   color: #313030;
-  margin-bottom: 10px;
+  font-size: 1.6rem;
 }
 
-.projects__container__project__container__desc {
+.projects__container__project__desc {
+  color: #313030;
   font-weight: 300;
-  color: #313030;
   margin-bottom: 10px;
 }
 
-.projects__container__project__container__technologies {
+.projects__container__project__technologies {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
 }
 
-.projects__container__project__container__technologies__technology {
-  margin-right: 10px;
-  width: 50px;
+.projects__container__project__technologies__technology {
   height: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  text-align: center;
+  padding: 0 5px;
+  background-color: white;
+  margin-right: 10px;
   line-height: 20px;
-  font-size: 0.8rem;
   color: #313030;
-  font-weight: 300;
+  border-radius: 5px;
+  font-size: 0.8rem;
 }
 
-.projects__container__project:nth-child(2n) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+.projects__container__project__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects__container__project__links__link {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.projects__container__project__links__link i {
+  margin-right: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: #313030;
+}
+
+a:visited {
+  color: none;
 }
 
 .about {
