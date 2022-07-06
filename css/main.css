@@ -7,8 +7,11 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .landing {
-  width: 100vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,7 +37,7 @@
 
 .landing__name {
   font-size: 2rem;
-  color: #666666;
+  color: #313030;
   font-weight: 400;
   margin-bottom: -15px;
 }
@@ -109,15 +112,109 @@
 }
 
 .projects {
-  width: 100vw;
   height: 200vh;
-  background-color: blue;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  background-color: #50baf5;
+  position: relative;
+}
+
+.projects__header {
+  text-align: center;
+  font-size: 3rem;
+  padding: 10px 0;
+  color: #313030;
+  margin-bottom: 20px;
+}
+
+.projects__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects__container__project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
+.projects__container__project__image-container {
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.projects__container__project__image-container img {
+  height: 250px;
+}
+
+.projects__container__project__container {
+  width: 300px;
+}
+
+.projects__container__project__container__header {
+  font-size: 1.5rem;
+  color: #313030;
+  margin-bottom: 10px;
+}
+
+.projects__container__project__container__desc {
+  font-weight: 300;
+  color: #313030;
+  margin-bottom: 10px;
+}
+
+.projects__container__project__container__technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.projects__container__project__container__technologies__technology {
+  margin-right: 10px;
+  width: 50px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 0.8rem;
+  color: #313030;
+  font-weight: 300;
+}
+
+.projects__container__project:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.about {
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
 }
 
 .container {
+  width: 100%;
   position: relative;
 }
 /*# sourceMappingURL=main.css.map */
