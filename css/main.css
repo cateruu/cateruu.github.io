@@ -27,7 +27,9 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .landing__name {
@@ -104,5 +106,18 @@
   100% {
     top: 5px;
   }
+}
+
+.projects {
+  width: 100vw;
+  height: 200vh;
+  background-color: blue;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.container {
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */
