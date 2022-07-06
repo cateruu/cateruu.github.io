@@ -114,6 +114,7 @@ html {
 .projects {
   background-color: #50baf5;
   position: relative;
+  padding-bottom: 40px;
 }
 
 .projects__header {
@@ -126,12 +127,12 @@ html {
 
 .projects__container {
   margin: 0 auto;
-  width: 840px;
+  width: 740px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto auto;
-  -ms-grid-columns: 400px 400px;
-      grid-template: auto auto / 400px 400px;
+  -ms-grid-columns: 350px 350px;
+      grid-template: auto auto / 350px 350px;
   gap: 40px;
   padding-bottom: 40px;
 }
@@ -147,8 +148,20 @@ html {
 }
 
 .projects__container__project__image {
-  width: 400px;
+  width: 350px;
+  height: 200px;
   border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.projects__container__project__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
 }
 
 .projects__container__project__name {
@@ -195,13 +208,14 @@ html {
   margin-right: 3px;
 }
 
-a {
-  text-decoration: none;
-  color: #313030;
-}
-
-a:visited {
-  color: none;
+.projects__all {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #313030;
+  border-radius: 5px;
+  margin: 0 auto;
 }
 
 .about {
@@ -213,5 +227,10 @@ a:visited {
 .container {
   width: 100%;
   position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #313030;
 }
 /*# sourceMappingURL=main.css.map */
