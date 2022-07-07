@@ -27,10 +27,10 @@ const About = () => {
           <div className={classes.history}>
             <h3>Me</h3>
             <p>
-              Born in August 8, 2000. I started learning web dev in 2019,
-              grasped some basics and left it for 3 years to explore other
-              options in programming such as game dev. I returned to web dev in
-              May 2022 and have been learning it ever since.
+              Born in August 8, 2000. <br /> I started learning web dev in 2019,
+              grasped some basics and left it for 3 years to explore other areas
+              of programming such as game dev. I returned to web dev in May 2022
+              and have been learning it ever since.
             </p>
           </div>
           <div className={classes.skills}>
@@ -77,12 +77,31 @@ const About = () => {
           </div>
         </section>
         <section className={classes.contact}>
-          <FontAwesomeIcon icon={faEnvelope} />
-          <FontAwesomeIcon icon={faGithub} />
-          <FontAwesomeIcon icon={faTwitter} />
-          <FontAwesomeIcon icon={faLinkedin} />
+          <a href='mailto:pawelkrml@gmail.com'>
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
+          <a href='https://github.com/cateruu' target='_blank' rel='noreferrer'>
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a
+            href='https://twitter.com/catertwt'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <FontAwesomeIcon icon={faTwitter} />
+          </a>
+          <a
+            href='https://www.linkedin.com/in/paweł-kromołowski-61a3b816b/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
         </section>
       </div>
+      <div className={classes.lDec}></div>
+      <div className={classes.mDec}></div>
+      <div className={classes.rDec}></div>
     </section>
   );
 };
