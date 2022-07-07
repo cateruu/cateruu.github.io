@@ -131,3 +131,11 @@ a {
   right: 60px;
   bottom: 380px;
 }
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--border-color);
+}

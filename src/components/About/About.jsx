@@ -102,6 +102,7 @@ const About = () => {
       <div className={classes.lDec}></div>
       <div className={classes.mDec}></div>
       <div className={classes.rDec}></div>
+      <footer>&copy; 2022 Paweł Kromołowski</footer>
     </section>
   );
 };
