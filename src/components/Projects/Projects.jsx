@@ -12,6 +12,52 @@ import { faSortUp, faSortDown } from '@fortawesome/free-solid-svg-icons';
 const Projects = () => {
   const [projects, setProjects] = useState(projectsJSON);
 
+  const setCurrentProject = (action) => {
+    setProjects((prevState) => {
+      let currentState;
+      let currentActive = prevState.filter((project) => project.active)[0];
+
+      if (action === 'up') {
+        currentState = prevState.map((project) => {
+          if (project.id === currentActive.id) {
+            project.active = false;
+          } else if (
+            project.id === currentActive.id - 1 &&
+            !(currentActive.id - 1 < prevState[0].id)
+          ) {
+            project.active = true;
+          } else if (currentActive.id - 1 < prevState[0].id) {
+            prevState[prevState.length - 1].active = true;
+          }
+
+          return project;
+        });
+      } else if (action === 'down') {
+        currentState = prevState.map((project) => {
+          if (project.id === currentActive.id) {
+            project.active = false;
+          } else if (
+            project.id === currentActive.id + 1 &&
+            !(currentActive.id + 1 > prevState[prevState.length - 1].id)
+          ) {
+            project.active = true;
+          } else if (
+            currentActive.id + 1 >
+            prevState[prevState.length - 1].id
+          ) {
+            prevState[0].active = true;
+          }
+
+          return project;
+        });
+      }
+
+      return currentState;
+    });
+  };
+
+  // console.log(projects);
+
   const sliderElements = projects.map((project) => {
     return (
       <p
@@ -41,9 +87,17 @@ const Projects = () => {
       <h2 className={classes.header}>Projects</h2>
       <div className={classes.container}>
         <div className={classes.slider}>
-          <FontAwesomeIcon icon={faSortUp} className={classes.move} />
+          <FontAwesomeIcon
+            icon={faSortUp}
+            className={classes.move}
+            onClick={() => setCurrentProject('up')}
+          />
           {sliderElements}
-          <FontAwesomeIcon icon={faSortDown} className={classes.move} />
+          <FontAwesomeIcon
+            icon={faSortDown}
+            className={classes.move}
+            onClick={() => setCurrentProject('down')}
+          />
         </div>
         <div className={classes.project}>{activeProject}</div>
       </div>
