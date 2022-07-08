@@ -6,11 +6,11 @@
     "thumbnail": "",
     "code": "",
     "demo": "",
-    "active": true
+    "active": false
   },
   {
     "id": 2,
-    "name": "Slot machine",
+    "name": "To do",
     "description": "Very long description of this project I don’t know what to write here hehehhe pls dont ban ",
     "thumbnail": "",
     "code": "",
@@ -19,16 +19,16 @@
   },
   {
     "id": 3,
-    "name": "Slot machine",
+    "name": "Weather app",
     "description": "Very long description of this project I don’t know what to write here hehehhe pls dont ban ",
     "thumbnail": "",
     "code": "",
     "demo": "",
-    "active": false
+    "active": true
   },
   {
     "id": 4,
-    "name": "Slot machine",
+    "name": "expense tracker",
     "description": "Very long description of this project I don’t know what to write here hehehhe pls dont ban ",
     "thumbnail": "",
     "code": "",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "name": "Slot machine",
+    "name": "quizz",
     "description": "Very long description of this project I don’t know what to write here hehehhe pls dont ban ",
     "thumbnail": "",
     "code": "",
