@@ -25,7 +25,16 @@ const Projects = () => {
 
   const activeProject = projects
     .filter((project) => project.active)
-    .map((project) => <Project key={project.id} name={project.name} />);
+    .map((project) => (
+      <Project
+        key={project.id}
+        thumbnail={project.thumbnail}
+        name={project.name}
+        description={project.description}
+        code={project.code}
+        demo={project.demo}
+      />
+    ));
 
   return (
     <section className={classes.projects}>

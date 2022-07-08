@@ -3,10 +3,10 @@
     "id": 1,
     "name": "Slot machine",
     "description": "Very long description of this project I don’t know what to write here hehehhe pls dont ban ",
-    "thumbnail": "",
-    "code": "",
-    "demo": "",
-    "active": false
+    "thumbnail": "images/gamba.png",
+    "code": "https://github.com/cateruu/gamba",
+    "demo": "https://cateruu.github.io/gamba/",
+    "active": true
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
     "thumbnail": "",
     "code": "",
     "demo": "",
-    "active": true
+    "active": false
   },
   {
     "id": 4,
