@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Slot machine",
-    "description": "Very long description of this project I don’t know what to write here hehehhe pls dont ban ",
+    "description": "Slot machine made with React with React Hooks, Context API and plugins like FontAwesome and React Howler.",
     "thumbnail": "images/gamba.png",
     "code": "https://github.com/cateruu/gamba",
     "demo": "https://cateruu.github.io/gamba/",
@@ -10,38 +10,38 @@
   },
   {
     "id": 2,
-    "name": "To do",
-    "description": "Very long description of this project I don’t know what to write here hehehhe pls dont ban ",
-    "thumbnail": "",
-    "code": "",
-    "demo": "",
+    "name": "Quiz app",
+    "description": "Quiz app made with React using React Hooks and external API.",
+    "thumbnail": "images/quizz.png",
+    "code": "https://github.com/cateruu/quizz",
+    "demo": "https://cateruu.github.io/quizz/",
     "active": false
   },
   {
     "id": 3,
-    "name": "Weather app",
-    "description": "Very long description of this project I don’t know what to write here hehehhe pls dont ban ",
-    "thumbnail": "",
-    "code": "",
-    "demo": "",
+    "name": "Expense tracker",
+    "description": "Expense tracker app made with React using React Hooks and local storage.",
+    "thumbnail": "images/expense.png",
+    "code": "https://github.com/cateruu/expenses-tracker/",
+    "demo": "https://cateruu.github.io/expenses-tracker/",
     "active": false
   },
   {
     "id": 4,
-    "name": "expense tracker",
-    "description": "Very long description of this project I don’t know what to write here hehehhe pls dont ban ",
-    "thumbnail": "",
-    "code": "",
-    "demo": "",
+    "name": "To do app",
+    "description": "To do app made with JavaScript and local storage with draggableelements.",
+    "thumbnail": "images/todo.png",
+    "code": "https://github.com/cateruu/ToDo-App",
+    "demo": "https://cateruu.github.io/ToDo-App/",
     "active": false
   },
   {
     "id": 5,
-    "name": "quizz",
-    "description": "Very long description of this project I don’t know what to write here hehehhe pls dont ban ",
-    "thumbnail": "",
-    "code": "",
-    "demo": "",
+    "name": "Weather app",
+    "description": "Weather app made with JavaScript using external API.",
+    "thumbnail": "images/weather.png",
+    "code": "https://github.com/cateruu/Weather-App",
+    "demo": "https://cateruu.github.io/Weather-App/dist/",
     "active": false
   }
 ]
