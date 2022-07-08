@@ -2,6 +2,7 @@ import { useState } from 'react';
 // styles
 import classes from './css/Projects.module.css';
 // components
+import Project from './components/Project';
 // utils
 import projectsJSON from './utils/projects.json';
 // font awesome
@@ -22,6 +23,10 @@ const Projects = () => {
     );
   });
 
+  const activeProject = projects
+    .filter((project) => project.active)
+    .map((project) => <Project key={project.id} name={project.name} />);
+
   return (
     <section className={classes.projects}>
       <h2 className={classes.header}>Projects</h2>
@@ -31,7 +36,7 @@ const Projects = () => {
           {sliderElements}
           <FontAwesomeIcon icon={faSortDown} className={classes.move} />
         </div>
-        <div className={classes.project}></div>
+        <div className={classes.project}>{activeProject}</div>
       </div>
       <div className={classes.lDec}></div>
       <div className={classes.mDec}></div>
