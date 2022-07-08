@@ -10,7 +10,6 @@ import {
   faReact,
   faGitAlt,
   faGithub,
-  faTwitter,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -82,13 +81,6 @@ const About = () => {
           </a>
           <a href='https://github.com/cateruu' target='_blank' rel='noreferrer'>
             <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href='https://twitter.com/catertwt'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <FontAwesomeIcon icon={faTwitter} />
           </a>
           <a
             href='https://www.linkedin.com/in/paweł-kromołowski-61a3b816b/'
