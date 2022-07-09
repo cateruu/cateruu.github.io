@@ -12,16 +12,15 @@ import { faSortUp, faSortDown } from '@fortawesome/free-solid-svg-icons';
 const Projects = () => {
   const [projects, setProjects] = useState(projectsJSON);
 
-  const setCurrentProject = (action) => {
+  const setCurrentProject = (action, id) => {
     setProjects((prevState) => {
       let currentState;
       let currentActive = prevState.filter((project) => project.active)[0];
+      currentActive.active = false;
 
       if (action === 'up') {
         currentState = prevState.map((project) => {
-          if (project.id === currentActive.id) {
-            project.active = false;
-          } else if (
+          if (
             project.id === currentActive.id - 1 &&
             !(currentActive.id - 1 < prevState[0].id)
           ) {
@@ -34,9 +33,7 @@ const Projects = () => {
         });
       } else if (action === 'down') {
         currentState = prevState.map((project) => {
-          if (project.id === currentActive.id) {
-            project.active = false;
-          } else if (
+          if (
             project.id === currentActive.id + 1 &&
             !(currentActive.id + 1 > prevState[prevState.length - 1].id)
           ) {
@@ -50,19 +47,26 @@ const Projects = () => {
 
           return project;
         });
+      } else if (action === 'select') {
+        currentState = prevState.map((project) => {
+          if (project.id === id) {
+            project.active = true;
+          }
+
+          return project;
+        });
       }
 
       return currentState;
     });
   };
 
-  // console.log(projects);
-
   const sliderElements = projects.map((project) => {
     return (
       <p
         key={project.id}
         className={`${classes.name} ${project.active ? classes.active : null}`}
+        onClick={() => setCurrentProject('select', project.id)}
       >
         {project.name}
       </p>
