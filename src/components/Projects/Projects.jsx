@@ -1,4 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+// custom hooks
+import useWindowSize from '../../hooks/useWindowSize';
 // styles
 import classes from './css/Projects.module.css';
 // components
@@ -11,6 +13,7 @@ import { faSortUp, faSortDown } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectsJSON);
+  const [width, height] = useWindowSize();
 
   const setCurrentProject = (action, id) => {
     setProjects((prevState) => {
@@ -62,7 +65,7 @@ const Projects = () => {
   };
 
   let sliderElements = projects.map((project) => {
-    if (document.body.clientWidth <= 800) {
+    if (width <= 800) {
       return project.active ? (
         <p
           key={project.id}
