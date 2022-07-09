@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 // styles
 import classes from './css/Projects.module.css';
 // components
@@ -61,16 +61,31 @@ const Projects = () => {
     });
   };
 
-  const sliderElements = projects.map((project) => {
-    return (
-      <p
-        key={project.id}
-        className={`${classes.name} ${project.active ? classes.active : null}`}
-        onClick={() => setCurrentProject('select', project.id)}
-      >
-        {project.name}
-      </p>
-    );
+  let sliderElements = projects.map((project) => {
+    if (document.body.clientWidth <= 800) {
+      return project.active ? (
+        <p
+          key={project.id}
+          className={`${classes.name} ${
+            project.active ? classes.active : null
+          }`}
+        >
+          {project.name}
+        </p>
+      ) : null;
+    } else {
+      return (
+        <p
+          key={project.id}
+          className={`${classes.name} ${
+            project.active ? classes.active : null
+          }`}
+          onClick={() => setCurrentProject('select', project.id)}
+        >
+          {project.name}
+        </p>
+      );
+    }
   });
 
   const activeProject = projects
