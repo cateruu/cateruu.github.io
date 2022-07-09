@@ -171,6 +171,10 @@ footer {
     margin-right: 5px;
   }
 
+  .contact svg {
+    font-size: 40px;
+  }
+
   .mDec {
     display: none;
   }
