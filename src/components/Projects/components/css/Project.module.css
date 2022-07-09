@@ -42,3 +42,18 @@
 .icon {
   margin-right: 3px;
 }
+
+@media screen and (max-width: 800px) {
+  .project {
+    width: 90%;
+  }
+
+  .imgContainer {
+    width: 300px;
+    height: 200px;
+  }
+
+  .img {
+    height: 200px;
+  }
+}

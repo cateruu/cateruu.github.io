@@ -107,6 +107,8 @@
   position: relative;
   text-align: center;
   user-select: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .name {
@@ -130,4 +132,72 @@
   color: var(--text-color);
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    padding-top: 20px;
+    font-size: 2.5rem;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+  }
+
+  .slider {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .name {
+    font-size: 1.4rem;
+    margin: 0 10px;
+  }
+
+  .move {
+    transform: rotate(-90deg);
+  }
+
+  .mDec {
+    display: none;
+  }
+
+  .lDec {
+    width: 120px;
+    height: 160px;
+    top: 80%;
+    left: -100px;
+  }
+
+  .lDec::before {
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    left: 125px;
+  }
+
+  .lDec::after {
+    width: 15px;
+    height: 15px;
+    top: 120px;
+    left: 120px;
+  }
+
+  .rDec {
+    top: 90px;
+    right: -130px;
+  }
 }
