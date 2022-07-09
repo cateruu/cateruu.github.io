@@ -43,6 +43,17 @@
   margin-right: 3px;
 }
 
+@media screen and (max-width: 1300px) {
+  .project {
+    width: 400px;
+  }
+
+  .imgContainer {
+    width: 450px;
+    height: 280px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .project {
     width: 90%;

@@ -15,11 +15,13 @@
   font-size: 2rem;
   color: var(--text-color);
   margin-bottom: -20px;
+  text-align: center;
 }
 
 .position {
   font-size: 3rem;
   font-weight: 200;
+  text-align: center;
   background: linear-gradient(90deg, #50baf5 0%, #28f7de 89.58%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
