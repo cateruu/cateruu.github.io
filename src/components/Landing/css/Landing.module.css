@@ -106,3 +106,21 @@
     top: 2px;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .name {
+    font-size: 1.5rem;
+    margin-bottom: -12px;
+  }
+
+  .position {
+    font-size: 2.2rem;
+  }
+
+  .rDec {
+    width: 140px;
+    height: 190px;
+    top: 20px;
+    right: -80px;
+  }
+}
