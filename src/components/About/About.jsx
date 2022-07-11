@@ -16,6 +16,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 // images
 import { ReactComponent as TypeScript } from '../../images/typescript.svg';
 import { ReactComponent as NextJS } from '../../images/nextjs.svg';
+import { ReactComponent as Redux } from '../../images/redux.svg';
 
 const About = () => {
   return (
@@ -70,6 +71,7 @@ const About = () => {
           <div className={classes.next}>
             <h4>Next to learn</h4>
             <div>
+              <Redux className={classes.svg} />
               <TypeScript className={classes.svg} />
               <NextJS className={classes.svg} />
             </div>
