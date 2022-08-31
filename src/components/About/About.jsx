@@ -66,11 +66,6 @@ const About = () => {
                 style={{ color: '#DD4C35' }}
                 className={classes.svg}
               />
-            </div>
-          </div>
-          <div className={classes.next}>
-            <h4>Next to learn</h4>
-            <div>
               <Redux className={classes.svg} />
               <TypeScript className={classes.svg} />
               <NextJS className={classes.svg} />

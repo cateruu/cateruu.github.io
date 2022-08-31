@@ -1,15 +1,33 @@
 [
   {
     "id": 1,
+    "name": "Social app",
+    "description": "App inspired by Twitter made with NextJS, TypeScript, Redux, Firebase and Auth0.",
+    "thumbnail": "images/social.png",
+    "code": "https://github.com/cateruu/social-app",
+    "demo": "https://social-app-phi.vercel.app/",
+    "active": true
+  },
+  {
+    "id": 2,
+    "name": "Fruit shop",
+    "description": "Fruit shop made with React with purpose of learning Redux.",
+    "thumbnail": "images/shop.png",
+    "code": "https://github.com/cateruu/shop",
+    "demo": "https://fruitshopp.netlify.app/",
+    "active": false
+  },
+  {
+    "id": 3,
     "name": "Slot machine",
     "description": "Slot machine made with React with React Hooks, Context API and plugins like FontAwesome and React Howler.",
     "thumbnail": "images/gamba.png",
     "code": "https://github.com/cateruu/gamba",
     "demo": "https://cateruu.github.io/gamba/",
-    "active": true
+    "active": false
   },
   {
-    "id": 2,
+    "id": 4,
     "name": "Quiz app",
     "description": "Quiz app made with React using React Hooks and external API.",
     "thumbnail": "images/quizz.png",
@@ -18,30 +36,12 @@
     "active": false
   },
   {
-    "id": 3,
-    "name": "Expense tracker",
-    "description": "Expense tracker app made with React using React Hooks and local storage.",
-    "thumbnail": "images/expense.png",
-    "code": "https://github.com/cateruu/expenses-tracker/",
-    "demo": "https://cateruu.github.io/expenses-tracker/",
-    "active": false
-  },
-  {
-    "id": 4,
+    "id": 5,
     "name": "To do app",
-    "description": "To do app made with JavaScript and local storage with draggableelements.",
+    "description": "To do app made with JavaScript and local storage with draggable elements.",
     "thumbnail": "images/todo.png",
     "code": "https://github.com/cateruu/ToDo-App",
     "demo": "https://cateruu.github.io/ToDo-App/",
-    "active": false
-  },
-  {
-    "id": 5,
-    "name": "Weather app",
-    "description": "Weather app made with JavaScript using external API.",
-    "thumbnail": "images/weather.png",
-    "code": "https://github.com/cateruu/Weather-App",
-    "demo": "https://cateruu.github.io/Weather-App/dist/",
     "active": false
   }
 ]
