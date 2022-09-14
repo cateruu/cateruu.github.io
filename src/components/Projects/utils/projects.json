@@ -10,6 +10,15 @@
   },
   {
     "id": 2,
+    "name": "F1 Info",
+    "description": "Website with F1 informations like next race, result, standings and more. Made with NextJS",
+    "thumbnail": "images/f1-info.png",
+    "code": "https://github.com/cateruu/F1-info",
+    "demo": "https://f1-info.vercel.app/",
+    "active": false
+  },
+  {
+    "id": 3,
     "name": "Fruit shop",
     "description": "Fruit shop made with React with purpose of learning Redux.",
     "thumbnail": "images/shop.png",
@@ -18,21 +27,12 @@
     "active": false
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Slot machine",
     "description": "Slot machine made with React with React Hooks, Context API and plugins like FontAwesome and React Howler.",
     "thumbnail": "images/gamba.png",
     "code": "https://github.com/cateruu/gamba",
     "demo": "https://cateruu.github.io/gamba/",
-    "active": false
-  },
-  {
-    "id": 4,
-    "name": "Quiz app",
-    "description": "Quiz app made with React using React Hooks and external API.",
-    "thumbnail": "images/quizz.png",
-    "code": "https://github.com/cateruu/quizz",
-    "demo": "https://cateruu.github.io/quizz/",
     "active": false
   },
   {
